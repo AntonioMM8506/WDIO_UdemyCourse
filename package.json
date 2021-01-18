@@ -1,0 +1,23 @@
+{
+  "name": "webdriverio",
+  "version": "1.0.0",
+  "description": "UdemyCourse WebdriverIO Framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "wdio"
+  },
+  "author": "AntonioMaldonado",
+  "license": "ISC",
+  "devDependencies": {
+    "@wdio/cli": "^6.11.3",
+    "@wdio/local-runner": "^6.11.3",
+    "@wdio/mocha-framework": "^6.11.0",
+    "@wdio/spec-reporter": "^6.11.0",
+    "@wdio/sync": "^6.11.0",
+    "chromedriver": "^87.0.5",
+    "mocha": "^8.2.1",
+    "selenium-standalone": "^6.23.0",
+    "wdio-chromedriver-service": "^6.0.4",
+    "wdio-selenium-standalone-service": "0.0.12"
+  }
+}

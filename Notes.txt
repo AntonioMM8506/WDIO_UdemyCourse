@@ -1,0 +1,33 @@
+IMPORTANT: WebdriverIO v4 & NodeJS
+IMPORTANT PLEASE READ - PRIOR TO NEXT LECTURE (LECTURE 9):
+
+NodeJS are frequently releasing new updates and you may run into issues when attempting to use newer versions of NodeJs  (i.e. NodeJS 10.x) with WebdriverIO v4.
+
+
+
+Please ensure you have downloaded & installed the following version of NodeJS v8 (COVERED IN THE NEXT LECTURE): https://nodejs.org/dist/latest-v8.x/ when studying all lectures related to WebdriverIO v4.
+
+
+
+If you are using a newer version of NodeJS, its recommended to:
+
+-Downgrade / uninstall your version of node to: NodeJS v8
+
+-Or switch the version of NodeJS being used: https://stackoverflow.com/questions/7718313/how-to-change-to-an-older-version-of-node-js
+
+
+
+WEBDRIVERIO V5 & NEWER VERSIONS OF NODEJS
+
+In later modules and lectures we will be covering WebdriverIO v5 and in turn, we will be using newer versions of NodeJS (i.e. v10.16.0)
+
+
+
+
+
+
+http://v4.webdriver.io/
+
+
+
+

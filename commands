@@ -1,0 +1,109 @@
+//Course recommended ----------------------------------------------------------------------
+npm install --save-dev webdriverio@4.13.2
+npm install --save-dev mocha@5.2.0
+npm install selenium-standalone@6.15.3 --save-dev
+./node_modules/.bin/selenium-standalone install 
+./node_modules/.bin/selenium-standalone start
+
+// in browser =>  http://127.0.0.1:4444/wd/hub/static/resource/hub.html
+
+npm i @wdio/cli
+./node_modules/.bin/wdio
+-> On my local machines
+-> mocha
+-> Yes
+-> ./tests/**/*.js
+-> 
+-> selenium-standalone
+-> silent
+-> ./errorShots
+-> www.webdriveruniversity.com
+
+npm i --save-dev mocha@latest
+
+npm i wdio-selenium-standalone-service --save-dev
+
+
+
+
+
+//Executed ----------------------------------------------------------------------------------
+npm i --save-dev @wdio/cli
+npm config set python "C:\Python39\python.exe" 
+npx wdio config -y
+npm install --save-dev mocha
+npm install selenium-standalone --save-dev
+./node_modules/.bin/selenium-standalone install 
+./node_modules/.bin/selenium-standalone start
+
+// in browser =>  http://127.0.0.1:4444/wd/hub/static/resource/hub.html
+
+npm i --save-dev mocha@latest
+
+npm i wdio-selenium-standalone-service --save-dev
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
