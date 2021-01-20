@@ -22,7 +22,7 @@ npm i @wdio/cli
 npm i --save-dev mocha@latest
 
 npm i wdio-selenium-standalone-service --save-dev
-
+npm i chai@latest --save-dev
 
 
 
@@ -41,7 +41,7 @@ npm install selenium-standalone --save-dev
 npm i --save-dev mocha@latest
 
 npm i wdio-selenium-standalone-service --save-dev
-
+npm i chai@latest --save-dev
 
 
 

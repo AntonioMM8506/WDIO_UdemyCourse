@@ -1,4 +1,5 @@
 var assert = require('assert');
+var expect = require('chai').expect;
 
 describe("Verify whether webdriveruniversity links on homepage work correctly", () => {
     
@@ -9,23 +10,13 @@ describe("Verify whether webdriveruniversity links on homepage work correctly", 
 
         const title = browser.getTitle();
         assert.strictEqual(title, 'WebDriverUniversity.com');
+        expect(title).to.equal('WebDriverUniversity.com');
+        title.should.equal('WebDriverUniversity.com');
+        //expect(browser).toHaveTitle('WebDriverUniversity.com');
 
-        expect(browser).toHaveTitle('WebDriverUniversity.com');
         const contact_us = $('#contact-us');
         contact_us.click();
-        //browser.pause(3000);
     
     });//End of first test case
-
-    
-    it("check that the LogIn button opens the login portal page", () => {
-        browser.url('/')
-        expect(browser).toHaveTitle('WebDriverUniversity.com');
-        const login_portal = $('#login-portal');
-        login_portal.click();
-        //browser.pause(3000);
-        
-    });//End of second test case
-    
 
 }) //End of describe
