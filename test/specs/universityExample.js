@@ -9,6 +9,10 @@ describe("Verify whether webdriveruniversity links on homepage work correctly", 
         browser.url('/');
 
         const title = browser.getTitle();
+        console.log('Title is: ' + title);
+
+        browser.debug();
+
         assert.strictEqual(title, 'WebDriverUniversity.com');
         expect(title).to.equal('WebDriverUniversity.com');
         title.should.equal('WebDriverUniversity.com');

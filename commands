@@ -47,7 +47,8 @@ npm i chai@latest --save-dev
 
 
 
-
+// RUN ...........................................................................................
+DEBUG=true npm test -- --spec=test\specs\universityExample.js
 
 
 

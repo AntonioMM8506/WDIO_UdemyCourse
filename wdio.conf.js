@@ -9,6 +9,9 @@ else {
     baseUrl = 'http://www.webdriveruniversity.com';
 }
 
+//With and env changes the time for timeout in order to use debug mode
+var timeout = process.env.DEBUG ? 99999999 : 10000;
+
 exports.config = {
     //
     // ====================
@@ -154,7 +157,7 @@ exports.config = {
     // See the full list at http://mochajs.org/
     mochaOpts: {
         ui: 'bdd',
-        timeout: 60000
+        timeout: timeout
     },
     //
     // =====
