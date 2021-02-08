@@ -43,8 +43,11 @@ npm i --save-dev mocha@latest
 npm i wdio-selenium-standalone-service --save-dev
 npm i chai@latest --save-dev
 
+npm axios --save-dev
+npm ts-node --save-dev
+npm typescript --save-dev
 
-
+npm install @wdio/selenium-standalone-service --save-dev
 
 
 // RUN ...........................................................................................

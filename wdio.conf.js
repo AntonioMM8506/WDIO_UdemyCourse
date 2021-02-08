@@ -10,7 +10,7 @@ else {
 }
 
 //With and env changes the time for timeout in order to use debug mode
-var timeout = process.env.DEBUG ? 99999999 : 10000;
+var timeout = process.env.DEBUG ? 99999999 : 15000;
 
 exports.config = {
     //
@@ -65,13 +65,17 @@ exports.config = {
         // grid with only 5 firefox instances available you can make sure that not more than
         // 5 instances get started at a time.
         maxInstances: 5,
-        //
         browserName: 'chrome',
         acceptInsecureCerts: true
         // If outputDir is provided WebdriverIO can capture driver session logs
         // it is possible to configure which logTypes to include/exclude.
         // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
         // excludeDriverLogs: ['bugreport', 'server'],
+    },
+    {
+        maxInstances: 5,
+        browserName: 'firefox',
+        acceptInsecureCerts: true,
     }],
     //
     // ===================
@@ -111,7 +115,7 @@ exports.config = {
     
     //
     // Default timeout for all waitFor* commands.
-    waitforTimeout: 10000,
+    waitforTimeout: 15000,
     //
     // Default timeout in milliseconds for request
     // if browser driver or grid doesn't send response
