@@ -1,27 +1,59 @@
 //Mocha hooks
 
 const { expect } = require("chai");
+const request = require('sync-request');
+
+/*
+browser.addCommand("submitDataViaContactUsForm", function(firstName, lastName, emailAddress, comments){
+    const first_name = $("[name=first_name]")
+    const last_name = $("[name=last_name]")
+    const email = $("[name=email]")
+    const message = $("[name=message]")
+    const sub = $("[type=submit]")
+
+    if(firstName){
+        first_name.setValue(firstName);
+    }
+    if(lastName){
+        last_name.setValue(lastName);
+    }
+    if(emailAddress){
+        email.setValue(contactDetail.email);
+    }
+    if(comments){
+        message.setValue(contactDetail.body);
+    }
+    sub.click();
+});
+*/
 
 beforeEach(function(){
     browser.url('/Contact-Us/contactus.html');
 });
 
 describe('Test Contact Us from WebdriverUni', function(){
+    var res = request('GET', 'http://jsonplaceholder.typicode.com/posts/1/comments');
+    var contactusDetails = JSON.parse(res.getBody().toString('utf8'));
+    
     beforeEach(function(){
         console.log("Inside the describe block");
     })
     
-    it('Should be able to submnit a succesful submission via contact us form', function(done){
+    contactusDetails.forEach(function(contactDetail){
+
+    it.only('Should be able to submnit a succesful submission via contact us form', function(done){
+        //browser.submitDataViaContactUsForm('joe', 'Blogs', contactDetail.email, contactDetail.body);
+        
         const first_name = $("[name=first_name]")
         const last_name = $("[name=last_name]")
         const email = $("[name=email]")
         const message = $("[name=message]")
         const sub = $("[type=submit]")
-        
+
         first_name.setValue("Joe")
         last_name.setValue("Blogs")
-        email.setValue("joe_blogs@mail.com")
-        message.setValue("How much does this product x cost?")
+        email.setValue(contactDetail.email)
+        message.setValue(contactDetail.body)
         sub.click();
 
         browser.pause(2000);
@@ -29,7 +61,8 @@ describe('Test Contact Us from WebdriverUni', function(){
         expect(loadingMessage.isExisting(), 'Succesful submission Message does not exist').to.be.true;
         expect(loadingMessage.getText()).to.be.equal('Thank You for your Message!', 
         `Expected message to be "Thank You for your Message" but found "${loadingMessage.getText()}" `);
-    
+    })
+
     });//End of first test case
 
     it('Should not be able to submnit a succesful submission via contact us form as all fields are required - Missed message', function(done){

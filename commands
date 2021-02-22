@@ -24,7 +24,7 @@ npm i --save-dev mocha@latest
 npm i wdio-selenium-standalone-service --save-dev
 npm i chai@latest --save-dev
 
-
+npm install sync-request --save-dev
 
 
 //Executed ----------------------------------------------------------------------------------
@@ -49,6 +49,7 @@ npm typescript --save-dev
 
 npm install @wdio/selenium-standalone-service --save-dev
 
+npm install sync-request --save-dev
 
 // RUN ...........................................................................................
 DEBUG=true npm test -- --spec=test\specs\universityExample.js
