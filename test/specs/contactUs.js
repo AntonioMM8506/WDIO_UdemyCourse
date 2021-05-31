@@ -35,10 +35,40 @@ describe('Test Contact Us from WebdriverUni', function(){
     var res = request('GET', 'http://jsonplaceholder.typicode.com/posts/1/comments');
     var contactusDetails = JSON.parse(res.getBody().toString('utf8'));
     
-    beforeEach(function(){
-        console.log("Inside the describe block");
-    })
+    const firstNameSelector = $("[name=first_name]");
+    const lastNameSelector = $("[name=last_name]");
+    const emailAddressSelector = $("[name=email]");
+    const commentsSelector = $("textarea");
+    const succesfulSubmissionSelector = $("#contact_reply h1");
+    const unsuccesfulSubmissionSelector = $("body");
+    const submitButtonSelector= $("[type=submit]");
     
+    function setFirstName(firstName){
+        return firstNameSelector.setValue(firstName);
+    }
+
+    function setLastName(lastName){
+        return lastNameSelector.setValue(lastName);
+    }
+
+    function setEmailAdress(emailAddress){
+        return emailAddressSelector.setValue(emailAddress);
+    }
+
+    function setComment(comment){
+        return commentsSelector.setValue(comment);
+    }
+
+    function clickSubmitButton(){
+        return submitButtonSelector.click();
+    }
+
+    function confirmSuccessfulSubmission(){
+        const validateSubmissionHeader = browser.waitUntil(function(){
+            succesfulSubmissionSelector.getText();
+        }) 
+    }
+
     contactusDetails.forEach(function(contactDetail){
 
     it.only('Should be able to submnit a succesful submission via contact us form', function(done){

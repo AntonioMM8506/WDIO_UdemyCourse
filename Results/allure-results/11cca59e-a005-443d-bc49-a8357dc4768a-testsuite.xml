@@ -1,0 +1,29 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1622434974998' stop='1622434996423'>
+    <name>Test that the button is clickable once the Ajax loader completes loading</name>
+    <title>Test that the button is clickable once the Ajax loader completes loading</title>
+    <test-cases>
+        <test-case start='1622434974999' status='broken' stop='1622434996421'>
+            <name>Attempt to click the button after 7 seconds</name>
+            <title>Attempt to click the button after 7 seconds</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-88.0'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Timeout of 20000ms exceeded. The execution in the test "Test that the button is clickable once the Ajax loader completes loading Attempt to click the button after 7 seconds" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts.html). (C:\Users\ASUS\Documents\VS Code\WebDriverIO\test\specs\ajaxClickTest.js)</message>
+                <stack-trace>Error: Timeout of 20000ms exceeded. The execution in the test "Test that the button is clickable once the Ajax loader completes loading Attempt to click the button after 7 seconds" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts.html). (C:\Users\ASUS\Documents\VS Code\WebDriverIO\test\specs\ajaxClickTest.js)
+                    at Test.Runnable._timeoutError (C:\Users\ASUS\Documents\VS Code\WebDriverIO\node_modules\mocha\lib\runnable.js:432:10)
+                    at Timeout.&lt;anonymous> (C:\Users\ASUS\Documents\VS Code\WebDriverIO\node_modules\mocha\lib\runnable.js:244:24)
+                    at listOnTimeout (internal/timers.js:554:17)
+                    at processTimers (internal/timers.js:497:7)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

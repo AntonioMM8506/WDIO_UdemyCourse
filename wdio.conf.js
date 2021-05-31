@@ -31,11 +31,12 @@ exports.config = {
     // directory is where your package.json resides, so `wdio` will be called from there.
     //
     specs: [
-        './test/specs/**/*.js'
+        //'./test/specs/**/*.js'
+        'test/*.js'
     ],
     // Patterns to exclude.
     exclude: [
-        // 'path/to/excluded/files'
+        'pageobjects/*_Page.js'
     ],
     //
     // ============
@@ -152,10 +153,31 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter.html
-    reporters: ['spec'],
-
-
+    //reporters: ['spec'],
     
+    //reporters:['dot', 'junit'],
+    //reporterOptions:{
+        //junit:{
+            //outputDir: './reports/junit-results/'
+        //} 
+    //},
+    
+    reporters: [
+        'dot',
+        ['json',{
+            outputDir: './Results/json/'
+        }],
+        ['junit', {
+            outputDir: './Results/junit/'
+        }],
+        ['allure', {
+            outputDir: './Results/allure-results/',
+            disableWebdriverStepsReporting: true,
+            disableWebdriverScreenshotsReporting: false,
+            useCucumberStepReporter: false
+        }]
+    ],
+
     //
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
@@ -196,8 +218,10 @@ exports.config = {
      * @param {Array.<Object>} capabilities list of capabilities details
      * @param {Array.<String>} specs List of spec file paths that are to be run
      */
-    // beforeSession: function (config, capabilities, specs) {
-    // },
+    //beforeSession: function (config, capabilities, specs) {
+        //const del = require('del');
+        //del(['allure-report', 'errorShots', 'reports']);
+    //},
     /**
      * Gets executed before test execution begins. At this point you can access to all global
      * variables like `browser`. It is the perfect place to define custom commands.
@@ -205,9 +229,9 @@ exports.config = {
      * @param {Array.<String>} specs        List of spec file paths that are to be run
      * @param {Object}         browser      instance of created browser/device session
      */
-     before: function (capabilities, specs) {
+    before: function (capabilities, specs) {
         should = require('chai').should();
-     },
+    },
     /**
      * Runs before a WebdriverIO command gets executed.
      * @param {String} commandName hook command name
@@ -267,8 +291,10 @@ exports.config = {
      * @param {Array.<Object>} capabilities list of capabilities details
      * @param {Array.<String>} specs List of spec file paths that ran
      */
-    // after: function (result, capabilities, specs) {
-    // },
+    //after: function (result, capabilities, specs) {
+        //var name = 'ERROR-chrome-' + Date.now();
+        //browser.saveScreenshot('./errorShots/' + name + '.png');
+    //},
     /**
      * Gets executed right after terminating the webdriver session.
      * @param {Object} config wdio configuration object
@@ -293,5 +319,11 @@ exports.config = {
     * @param {String} newSessionId session ID of the new session
     */
     //onReload: function(oldSessionId, newSessionId) {
+    //}
+
+    //afterStep: function (test, scenario, { error, duration, passed }) {
+        //if (error) {
+            //browser.takeScreenshot();
+        //}
     //}
 }

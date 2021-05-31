@@ -26,6 +26,13 @@ npm i chai@latest --save-dev
 
 npm install sync-request --save-dev
 
+npm install wdio-junit-reporter --save-dev
+
+npm install wdio-allure-reporter --save-dev
+
+npm i -g allure-commandline --save-dev
+
+npm install del --save-dev
 
 //Executed ----------------------------------------------------------------------------------
 npm i --save-dev @wdio/cli
@@ -51,9 +58,23 @@ npm install @wdio/selenium-standalone-service --save-dev
 
 npm install sync-request --save-dev
 
-// RUN ...........................................................................................
-DEBUG=true npm test -- --spec=test\specs\universityExample.js
+npm install @wdio/junit-reporter --save-dev
 
+npm install @wdio/spec-reporter --save-dev
+
+npm install wdio-json-reporter --save-dev
+
+npm install @wdio/allure-reporter --save-dev
+
+npm i -g allure-commandline --save-dev
+
+npm install del --save-dev
+
+
+// RUN ...........................................................................................
+DEBUG=true npm test -- --spec=test/specs/universityExample.js
+allure generate +"path of file" => allure generate "C:/Users/ASUS/Documents/VS Code/WebDriverIO/Results/allure-results" --clean
+allure open
 
 
 

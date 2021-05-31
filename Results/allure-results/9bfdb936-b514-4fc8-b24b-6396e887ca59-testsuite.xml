@@ -1,0 +1,21 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1622429914818' stop='1622429923831'>
+    <name>Verify whether webdriveruniversity links on homepage work correctly</name>
+    <title>Verify whether webdriveruniversity links on homepage work correctly</title>
+    <test-cases>
+        <test-case start='1622429914819' status='passed' stop='1622429923829'>
+            <name>check that the contact us button opens the contact us page</name>
+            <title>check that the contact us button opens the contact us page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-90.0.4430.212'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
