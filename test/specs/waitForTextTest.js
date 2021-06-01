@@ -12,6 +12,12 @@ describe('Verify that the correct text appears on the accordion page', ()=>{
         console.log("Current Text", hiddenText.getText());
         hiddenText.waitForExist({timeout: 15000});
 
+        try{
+            expect(hiddenText.getText()).to.equal("Test")
+        } catch(err){
+            console.log("Exception:" + err);
+        }
+
     });//End of first TC
 
 });//End of describe

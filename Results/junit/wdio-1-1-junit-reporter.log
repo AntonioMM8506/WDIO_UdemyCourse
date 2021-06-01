@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Test contact us page on webdriveruni" timestamp="2021-05-31T23:50:41" time="25.588" tests="1" failures="1" errors="1" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Test contact us page on webdriveruni"/>
+      <property name="capabilities" value="firefox.88_0.windows"/>
+      <property name="file" value=".\test\specs\contact-us-test.js"/>
+    </properties>
+    <testcase classname="firefox.88_0.windows.Test contact us page on webdriveruni" name="Submit all information via the contact us page" time="25.583">
+      <failure/>
+      <error message="Timeout of 15000ms exceeded. The execution in the test &quot;Test contact us page on webdriveruni Submit all information via the contact us page&quot; took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts.html). (C:\Users\ASUS\Documents\VS Code\WebDriverIO\test\specs\contact-us-test.js)"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/a0947898-14f0-44c5-981d-9f2c2dcada4a/window/rect - {"x":null,"y":null,"width":1800,"height":1200}
+RESULT: {"x":null,"y":null,"width":1800,"height":1200}
+COMMAND: POST /session/a0947898-14f0-44c5-981d-9f2c2dcada4a/url - {"url":"http://www.webdriveruniversity.com/"}
+RESULT: {"url":"http://www.webdriveruniversity.com/"}
+COMMAND: GET /session/a0947898-14f0-44c5-981d-9f2c2dcada4a/url - {}
+RESULT: {}
+COMMAND: GET /session/a0947898-14f0-44c5-981d-9f2c2dcada4a/title - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/a0947898-14f0-44c5-981d-9f2c2dcada4a/element - {"using":"xpath","value":"//h1[text()=\"CONTACT US\"]/.."}
+RESULT: {"using":"xpath","value":"//h1[text()=\"CONTACT US\"]/.."}
+COMMAND: POST /session/a0947898-14f0-44c5-981d-9f2c2dcada4a/element/538200c8-be98-4442-92ed-76d120e5ebef/click - {}
+RESULT: {}
+COMMAND: GET /session/a0947898-14f0-44c5-981d-9f2c2dcada4a/window/handles - {}
+RESULT: {}
+COMMAND: POST /session/a0947898-14f0-44c5-981d-9f2c2dcada4a/window - {"handle":"19"}
+RESULT: {"handle":"19"}
+COMMAND: GET /session/a0947898-14f0-44c5-981d-9f2c2dcada4a/url - {}
+RESULT: {}
+COMMAND: GET /session/a0947898-14f0-44c5-981d-9f2c2dcada4a/title - {}
+RESULT: {}
+COMMAND: POST /session/a0947898-14f0-44c5-981d-9f2c2dcada4a/window - {"handle":"29"}
+RESULT: {"handle":"29"}
+COMMAND: GET /session/a0947898-14f0-44c5-981d-9f2c2dcada4a/url - {}
+RESULT: {}
+COMMAND: GET /session/a0947898-14f0-44c5-981d-9f2c2dcada4a/title - {}
+RESULT: {}
+COMMAND: POST /session/a0947898-14f0-44c5-981d-9f2c2dcada4a/element - {"using":"xpath","value":"//*[@name=\"first_name\"]"}
+RESULT: {"using":"xpath","value":"//*[@name=\"first_name\"]"}
+COMMAND: POST /session/a0947898-14f0-44c5-981d-9f2c2dcada4a/element - {"using":"xpath","value":"//*[@name=\"last_name\"]"}
+RESULT: {"using":"xpath","value":"//*[@name=\"last_name\"]"}
+COMMAND: POST /session/a0947898-14f0-44c5-981d-9f2c2dcada4a/element - {"using":"xpath","value":"//*[@name=\"email\"]"}
+RESULT: {"using":"xpath","value":"//*[@name=\"email\"]"}
+COMMAND: POST /session/a0947898-14f0-44c5-981d-9f2c2dcada4a/element - {"using":"xpath","value":"//*[@name=\"message\"]"}
+RESULT: {"using":"xpath","value":"//*[@name=\"message\"]"}
+COMMAND: POST /session/a0947898-14f0-44c5-981d-9f2c2dcada4a/element - {"using":"xpath","value":"//*[@value=\"SUBMIT\"]"}
+RESULT: {"using":"xpath","value":"//*[@value=\"SUBMIT\"]"}
+COMMAND: POST /session/a0947898-14f0-44c5-981d-9f2c2dcada4a/element/91b4392d-7c33-4519-a73d-b3adc500c722/clear - {}
+RESULT: {}
+COMMAND: POST /session/a0947898-14f0-44c5-981d-9f2c2dcada4a/element/91b4392d-7c33-4519-a73d-b3adc500c722/value - {"text":"Joe"}
+RESULT: {"text":"Joe"}
+COMMAND: POST /session/a0947898-14f0-44c5-981d-9f2c2dcada4a/element/eec0a71c-001d-4056-8b6a-60870ceb7981/clear - {}
+RESULT: {}
+COMMAND: POST /session/a0947898-14f0-44c5-981d-9f2c2dcada4a/element/eec0a71c-001d-4056-8b6a-60870ceb7981/value - {"text":"Blogs"}
+RESULT: {"text":"Blogs"}
+COMMAND: POST /session/a0947898-14f0-44c5-981d-9f2c2dcada4a/element/dfa9a64a-857b-46c4-bde5-ce48335a3538/clear - {}
+RESULT: {}
+COMMAND: POST /session/a0947898-14f0-44c5-981d-9f2c2dcada4a/element/dfa9a64a-857b-46c4-bde5-ce48335a3538/value - {"text":"joe_Blogs121@mail.com"}
+RESULT: {"text":"joe_Blogs121@mail.com"}
+COMMAND: POST /session/a0947898-14f0-44c5-981d-9f2c2dcada4a/element/3e8a8234-a4ca-4f91-8249-ee5d15dacd7d/clear - {}
+RESULT: {}
+COMMAND: POST /session/a0947898-14f0-44c5-981d-9f2c2dcada4a/element/3e8a8234-a4ca-4f91-8249-ee5d15dacd7d/value - {"text":"Hello how are you?"}
+RESULT: {"text":"Hello how are you?"}
+COMMAND: POST /session/a0947898-14f0-44c5-981d-9f2c2dcada4a/element/98f4afbe-8796-4212-88fc-20b715aa762a/click - {}
+COMMAND: DELETE /session/a0947898-14f0-44c5-981d-9f2c2dcada4a - {}
+RESULT: {}
+COMMAND: GET /session/a0947898-14f0-44c5-981d-9f2c2dcada4a/url - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Timeout of 15000ms exceeded. The execution in the test "Test contact us page on webdriveruni Submit all information via the contact us page" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts.html). (C:\Users\ASUS\Documents\VS Code\WebDriverIO\test\specs\contact-us-test.js)
+    at Test.Runnable._timeoutError (C:\Users\ASUS\Documents\VS Code\WebDriverIO\node_modules\mocha\lib\runnable.js:432:10)
+    at Timeout.<anonymous> (C:\Users\ASUS\Documents\VS Code\WebDriverIO\node_modules\mocha\lib\runnable.js:244:24)
+    at listOnTimeout (internal/timers.js:554:17)
+    at processTimers (internal/timers.js:497:7)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

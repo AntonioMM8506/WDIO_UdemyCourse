@@ -1,0 +1,33 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1622522978794' stop='1622522998834'>
+    <name>Test contact us page on webdriveruni</name>
+    <title>Test contact us page on webdriveruni</title>
+    <test-cases>
+        <test-case start='1622522978796' status='broken' stop='1622522998831'>
+            <name>Submit all information via the contact us page</name>
+            <title>Submit all information via the contact us page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-90.0.4430.212'/>
+                <parameter kind='argument' name='browser' value='chrome-90.0.4430.212'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Timeout of 15000ms exceeded. The execution in the test "Test contact us page on webdriveruni Submit all information via the contact us page" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts.html). (C:\Users\ASUS\Documents\VS Code\WebDriverIO\test\specs\contact-us-test.js)</message>
+                <stack-trace>Error: Timeout of 15000ms exceeded. The execution in the test "Test contact us page on webdriveruni Submit all information via the contact us page" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts.html). (C:\Users\ASUS\Documents\VS Code\WebDriverIO\test\specs\contact-us-test.js)
+                    at Test.Runnable._timeoutError (C:\Users\ASUS\Documents\VS Code\WebDriverIO\node_modules\mocha\lib\runnable.js:432:10)
+                    at Timeout.&lt;anonymous> (C:\Users\ASUS\Documents\VS Code\WebDriverIO\node_modules\mocha\lib\runnable.js:244:24)
+                    at listOnTimeout (internal/timers.js:554:17)
+                    at processTimers (internal/timers.js:497:7)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Test contact us page on webdriveruni" timestamp="2021-05-31T23:49:38" time="20.041" tests="1" failures="1" errors="1" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Test contact us page on webdriveruni"/>
+      <property name="capabilities" value="chrome.90_0_4430_212.windows"/>
+      <property name="file" value=".\test\specs\contact-us-test.js"/>
+    </properties>
+    <testcase classname="chrome.90_0_4430_212.windows.Test contact us page on webdriveruni" name="Submit all information via the contact us page" time="20.036">
+      <failure/>
+      <error message="Timeout of 15000ms exceeded. The execution in the test &quot;Test contact us page on webdriveruni Submit all information via the contact us page&quot; took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts.html). (C:\Users\ASUS\Documents\VS Code\WebDriverIO\test\specs\contact-us-test.js)"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/8fae2d9cccea583257d33e5f3466313e/window/rect - {"x":null,"y":null,"width":1800,"height":1200}
+RESULT: {"x":null,"y":null,"width":1800,"height":1200}
+COMMAND: POST /session/8fae2d9cccea583257d33e5f3466313e/url - {"url":"http://www.webdriveruniversity.com/"}
+RESULT: {"url":"http://www.webdriveruniversity.com/"}
+COMMAND: GET /session/8fae2d9cccea583257d33e5f3466313e/url - {}
+RESULT: {}
+COMMAND: GET /session/8fae2d9cccea583257d33e5f3466313e/title - {}
+RESULT: {}
+RESULT: undefined
+COMMAND: POST /session/8fae2d9cccea583257d33e5f3466313e/element - {"using":"xpath","value":"//h1[text()=\"CONTACT US\"]/.."}
+RESULT: {"using":"xpath","value":"//h1[text()=\"CONTACT US\"]/.."}
+COMMAND: POST /session/8fae2d9cccea583257d33e5f3466313e/element/2568068c-ce08-4485-abe8-fa052b746f6b/click - {}
+RESULT: {}
+COMMAND: GET /session/8fae2d9cccea583257d33e5f3466313e/window/handles - {}
+RESULT: {}
+COMMAND: POST /session/8fae2d9cccea583257d33e5f3466313e/window - {"handle":"CDwindow-D4B5B60FFBB2D4D8F0A75453C8D023D6"}
+RESULT: {"handle":"CDwindow-D4B5B60FFBB2D4D8F0A75453C8D023D6"}
+COMMAND: GET /session/8fae2d9cccea583257d33e5f3466313e/url - {}
+RESULT: {}
+COMMAND: GET /session/8fae2d9cccea583257d33e5f3466313e/title - {}
+RESULT: {}
+COMMAND: POST /session/8fae2d9cccea583257d33e5f3466313e/window - {"handle":"CDwindow-8558C8F539719AA5B41B8ED005E0F866"}
+RESULT: {"handle":"CDwindow-8558C8F539719AA5B41B8ED005E0F866"}
+COMMAND: GET /session/8fae2d9cccea583257d33e5f3466313e/url - {}
+COMMAND: DELETE /session/8fae2d9cccea583257d33e5f3466313e - {}
+RESULT: {}
+COMMAND: GET /session/8fae2d9cccea583257d33e5f3466313e/title - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Timeout of 15000ms exceeded. The execution in the test "Test contact us page on webdriveruni Submit all information via the contact us page" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts.html). (C:\Users\ASUS\Documents\VS Code\WebDriverIO\test\specs\contact-us-test.js)
+    at Test.Runnable._timeoutError (C:\Users\ASUS\Documents\VS Code\WebDriverIO\node_modules\mocha\lib\runnable.js:432:10)
+    at Timeout.<anonymous> (C:\Users\ASUS\Documents\VS Code\WebDriverIO\node_modules\mocha\lib\runnable.js:244:24)
+    at listOnTimeout (internal/timers.js:554:17)
+    at processTimers (internal/timers.js:497:7)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

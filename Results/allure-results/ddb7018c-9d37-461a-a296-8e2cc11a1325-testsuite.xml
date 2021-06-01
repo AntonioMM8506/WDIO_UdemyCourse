@@ -1,0 +1,28 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1622510155968' stop='1622510158524'>
+    <name>Verify that the correct text appears on the accordion page</name>
+    <title>Verify that the correct text appears on the accordion page</title>
+    <test-cases>
+        <test-case start='1622510155969' status='broken' stop='1622510158522'>
+            <name>Verify loading complete text is visible after a set duration of time</name>
+            <title>Verify loading complete text is visible after a set duration of time</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-88.0'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>assert is not defined</message>
+                <stack-trace>ReferenceError: assert is not defined
+                    at Context.&lt;anonymous> (C:\Users\ASUS\Documents\VS Code\WebDriverIO\test\specs\waitForTextTest.js:19:13)
+                    at Context.executeSync (C:\Users\ASUS\Documents\VS Code\WebDriverIO\node_modules\@wdio\sync\build\index.js:25:22)
+                    at C:\Users\ASUS\Documents\VS Code\WebDriverIO\node_modules\@wdio\sync\build\index.js:46:68</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

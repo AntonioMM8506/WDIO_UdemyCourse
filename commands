@@ -27,12 +27,21 @@ npm i chai@latest --save-dev
 npm install sync-request --save-dev
 
 npm install wdio-junit-reporter --save-dev
-
 npm install wdio-allure-reporter --save-dev
-
 npm i -g allure-commandline --save-dev
 
 npm install del --save-dev
+
+VS Code install Code Runner by Jun Han
+VS Code install Prettier - Code formater by Prettier 
+
+npm install --save-dev @babel/core @babel/cli @babel/preset-env @babel/register
+
+npm install chromedriver --save-dev
+npm install wdio-chromedriver-service --save-dev
+
+npm i --save-dev chai@latest
+
 
 //Executed ----------------------------------------------------------------------------------
 npm i --save-dev @wdio/cli
@@ -57,28 +66,35 @@ npm typescript --save-dev
 npm install @wdio/selenium-standalone-service --save-dev
 
 npm install sync-request --save-dev
-
 npm install @wdio/junit-reporter --save-dev
-
 npm install @wdio/spec-reporter --save-dev
-
 npm install wdio-json-reporter --save-dev
-
 npm install @wdio/allure-reporter --save-dev
-
 npm i -g allure-commandline --save-dev
 
 npm install del --save-dev
 
+VS Code install Code Runner by Jun Han
+VS Code install Prettier - Code formater by Prettier 
+
+npm install --save-dev @babel/core @babel/cli @babel/preset-env @babel/register
+
+npm install chromedriver --save-dev
+npm install wdio-chromedriver-service --save-dev
+
+npm i --save-dev chai@latest
 
 // RUN ...........................................................................................
 DEBUG=true npm test -- --spec=test/specs/universityExample.js
 allure generate +"path of file" => allure generate "C:/Users/ASUS/Documents/VS Code/WebDriverIO/Results/allure-results" --clean
 allure open
 
+./node_modules/.bin/wdio config => To config de wdio.conf file
+./node_modules/.bin/selenium-standalone install => install selenum server
+ ./node_modules/.bin/selenium-standalone start => run slenium server
+ npm run selenium-server
 
-
-
+npm test -- --suite contactUs
 
 
 
